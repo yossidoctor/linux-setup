@@ -33,7 +33,7 @@ sudo apt install -y \
     zsh
 
 echo_styled "Setting ZSH as default shell..."
-sudo chsh -s /usr/bin/zsh
+chsh -s $(which zsh)
 
 echo_styled "Installing Oh My Zsh framework..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
